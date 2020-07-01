@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     function draw(n) {
+      let star = "";
+       let num = 1;
+      for (let col = 1; col <= n; col++) {
+        
+        for (let row = 1; row <= n; row++) {
+          star = star + num;
+           num++
+        }
+        star = star + "\n";
+      }
+      console.log(star);
+
+    }
+    draw(2);
+    draw(3);
+    draw(4);
+</script>
+</html>

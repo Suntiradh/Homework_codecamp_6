@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    let game = Number(prompt ("กรุณาใส่เลขที่อยู่ระหว่าง 1-100"));
+
+    if( game === null || game == "" || game == null) {
+        alert("กรุณาใส่ตัวเลข")
+        
+    }
+    
+    if( 1 <= game <= 100 ) {      
+
+        for (let i=0;i <=99;i++) {
+            let checkNum = Number(prompt ("ทายตัวเลข 1-100"));
+            if (checkNum === null || checkNum == "" || checkNum == null) {
+                alert ("กรุณาใส่ตัวเลข")
+            }else if ( checkNum < game) {
+                alert("คุณทายไม่ถูก ตัวเลขของคุณน้อยกว่า");
+            }else if ( checkNum > game) {
+                alert ("คุณทายไม่ถูก ตัวเลขของคุณมากกว่า");
+            }else if (checkNum == game) {
+                alert("ยินดีด้วย คุณทายถูก");
+                break;
+              
+            }
+
+        }
+
+
+    }
+</script>
+</html>

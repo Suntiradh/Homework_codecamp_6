@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function draw(n) {
+      let star = "";
+      for (let col = 1; col <= n; col++) {      //กำหนดจำนวนแถว
+        for (let row = 1; row <= n; row++) {    //กำหนดจำนวนคอลัม
+          star = star + "*";
+        }
+        star = star + "\n";  //ขึ้นบรรทัดไหม่ทุกครั้ง ที่ คอลัม เท่ากับ n
+      }
+      console.log(star);
+    }
+    draw(2)
+    draw(3)
+    draw(4)
+
+</script>
+</html>

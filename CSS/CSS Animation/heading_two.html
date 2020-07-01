@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square{
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+            position: relative;
+            animation: play 10s 2s infinite alternate;
+        }
+        @keyframes play{
+            0% {
+                left: 0px;background-color: lawngreen;visibility: visible;
+            }
+            25% {
+                left: 300px;background-color: lightcoral;visibility: hidden;
+            }
+            50% {
+                left: 500px;background-color: red;visibility: collapse;
+            }
+            75% {
+                left: 800px;background-color: saddlebrown;visibility: visible;
+            }
+            100% {
+                left: 1300px;background-color: skyblue;visibility: visible;
+            }
+        }
+
+    </style>
+</head>
+<body style="text-align: center;">
+        <div class="square"></div>
+
+</body>
+</html>

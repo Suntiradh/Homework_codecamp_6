@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let login = prompt("คุณคือใคร?");
+    let Password = 'Codecamp#6'
+
+    if (login == 'Admin') {
+        let checkPw = prompt("กรุณาใส่ Password ของคุณ");
+            if ( checkPw == Password) {
+                alert("ยินดีต้อนรับ");
+            }
+            if (checkPw === null || checkPw == "" || checkPw == null) {
+                alert("ยกเลิก");
+            }
+            else if (checkPw != Password ) {
+                alert("Wrong password");
+            }
+        }
+    if (login === null || login == "" || login == null) {
+            alert("ยกเลิก");
+    }
+    else if (login !='Admin') {
+        alert("ฉันไม่รู้จักคุณ");
+    }
+
+
+</script>
+</html>

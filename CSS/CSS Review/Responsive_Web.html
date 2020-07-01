@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            background-image: url(contact-banner.jpg);
+            min-height: 840px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .container{
+            display: grid;
+        }
+        .one_column{
+            grid-template-columns: auto;
+            text-align: justify;
+            font-size: 22px;
+            line-height: 33px;   
+        }
+        .custom_font h2{
+            font-family: Montserrat,sans-serif;
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: 700;
+            color: #e91126;
+            margin: 40px 0px 40px 0px;
+            text-transform: none;
+            text-align: left;
+        }
+        .two_column label,.one_column label{
+            font-size: 22px;
+        }
+        .two_column{
+            grid-template-columns: auto auto;
+        }
+        .two_column input{
+            width: 100%;
+        }
+        .column{
+            width: 70%;
+            margin: auto;
+        }
+        .background_body{
+            background-size: 700px ;
+            background-position: right bottom ;
+            background-image: url(mobile.png);
+            padding-bottom: 170px;
+            text-align: left;
+            background-size: 700px;
+            background-position: right bottom;
+            background-repeat: no-repeat;
+        }
+        .contact{
+            text-align: center;
+            font-family: Montserrat,sans-serif;
+            font-weight: 700;
+            font-size: 57px;
+        }
+        .center{
+            margin-top: -200px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0px 1px 20px 20px rgba(234, 229, 229, 0.2);
+            position: relative;
+        }
+        .margin{
+            margin-right: 30px;
+        }
+        input{
+            padding: 10px 0;
+        }
+        @media only screen and (max-width: 1300px) {
+            .background{
+                min-height: 650px;
+            }
+        }
+        @media only screen and (max-width: 1024px){
+            .custom_font h2{
+                font-size: 50px;
+                line-height: 60px;
+            }
+        }
+        @media only screen and (max-width: 980px) {
+            .background{
+                min-height: 500px;
+            }
+            .custom_font h2{
+                font-size: 50px;
+                line-height: 55px;
+            }
+        }
+        @media only screen and (max-width: 823px) {
+            .custom_font h2{
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+        @media only screen and (max-width: 812px) {
+            .custom_font h2{
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+        @media only screen and (max-width: 767px) {
+            .two_column{
+                grid-template-columns: auto;
+            }
+            .margin{
+                margin-right: 0px;
+            }
+            .background{
+                min-height: 400px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        }
+        @media only screen and (max-width: 375px){
+            .background{
+                min-height: 340px;
+            }
+            .custom_font h2{
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="center column">
+        <form action="">
+            <div>
+                <h2 class="contact">Contact us <span style="color: #e91126;">today</span> </h2> 
+            </div>
+            <div class="container two_column">
+                <div class="margin">
+                    <label for="Your Name (required)">Your Name (required)</label><br>
+                    <input type="text" name="" id="Your Name (required)">
+                </div>
+                <div>
+                    <label for="Your Email (required)">Your Email (required)</label><br>
+                    <input type="text" name="" id="Your Email (required)">
+                </div>
+            </div>
+            <div class="container one_column">
+                <label for="Subject">Subject</label>
+                <input type="text" name="" id="Subject">
+            </div>
+            <div class="container one_column">
+                <label for="Your Message">Your Message</label>
+                <br>
+                <textarea name="" id="Your Message" rows="10"></textarea>
+            </div>
+            <div>
+                <button>Send</button>
+            </div>
+        </form>
+    </div>
+    <div class="one_column column container">
+        <p>Pimclick is a full service web design and online marketing agency offering a unique blend of creativity and expertise within the entirety of the digital spectrum. With headquarters located in Paris, France and branch offices dispersed throughout major cities such as Dubai, Hong Kong, Casablanca and Bangkok.</p>
+    </div>
+    <div class="column">
+        <img id="" class="" src="contact-video3.jpg" style="width:100%">
+    </div>
+    <div class="two_column column container custom_font">
+        <div>
+            <h2>
+            Digital <br> 
+            Strategy
+            </h2>
+            <h4>
+            Business Intelligence <br>
+            SEO – Search Engine Optimization <br>
+            SEM strategy <br>
+            Digital Content <br>
+            Branding Design <br>
+            UX & UI Design <br>
+            Product Prototype <br>
+            </h4>
+        </div>
+        <div>
+            <h2>
+                Digital <br>
+                Production
+            </h2>
+            <h4>
+                WebSites & Microsites <br>
+                Responsive Design / Development <br>
+                Mobile APP & Games <br>
+                Intranet & Extranet<br>
+                Virtual & Augmented Reality <br>
+                Interactive Installations <br>          
+            </h4>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="column two_column container custom_font">
+        <div>
+            <h2>
+                E-Marketing
+            </h2>
+            <h4>
+                BCampaigns management <br>
+                Market research <br>
+                User analysis <br>
+                Brand activation <br>
+                E-Commerce Development <br>
+                Social Media strategy and <br>
+                optimisation <br>
+                Advocacy & Influencer <br>
+            </h4>
+        </div>
+        <div>
+            <h2>
+                Graphic Design
+            </h2>
+            <h4>
+                Creative Art directio <br>
+                Branding & Identity <br>
+                3D modeling / Animation <br>
+                UI/UX design <br>
+                Prints & Signaletics <br>
+                Visual storytelling <br>
+                Layouting & Infographics <br>
+                Typography <br>
+            </h4>
+        </div>
+    </div>
+    <div class="background_body">
+        <div class="column custom_font container">
+            <div>
+                <h2>
+                    Video <br>
+                    Production
+                </h2>
+                <h4>
+                    Campaigns management <br>
+                    Scripting / Story Boarding <br>
+                    Filming <br>
+                    Editing/Grading <br>
+                    Motion Design <br>
+                    Sound design <br>               
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container column">
+        <h3 style="color: #e91126; font-family:'bookman';font-style: italic;text-align: center;">Our Clients</h3>
+        <h3 style="text-align: center;">
+            We partner up with forward thinking clients, <br>
+            being an extension of it’s marketing area.
+        </h3>
+    </div>
+
+</body>
+</html>

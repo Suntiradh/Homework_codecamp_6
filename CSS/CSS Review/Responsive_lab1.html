@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+        }
+        .center{
+            text-align: center;
+        }
+        .container.three_column{
+            grid-template-columns: auto auto auto;
+        }
+        .container.one_column{
+            grid-template-columns: 300px auto 300px;
+        }
+        title {
+            display: block;
+            border-style: solid;
+            text-align: center;
+            font-weight: bold;
+        }
+        .center img{
+            width: 80%;
+         }
+        .box{
+            border-style: solid;
+            border-width: 1px;
+            padding: 30px;
+            margin: 5px 10px;
+        }
+        @media only screen and (max-width: 1300px) and (min-width: 981px) {
+            .container.one_column{
+            grid-template-columns: 200px auto 200px;
+            }
+            
+        }
+        @media only screen and (max-width: 980px) and (min-width: 768px) {
+            .container.three_column{
+                grid-template-columns: auto auto;
+            }
+            .container.one_column{
+            grid-template-columns: 100px auto 100px;
+            }
+        }
+        @media only screen and (max-width: 767px) {
+            .container.three_column{
+                grid-template-columns: auto;
+            }
+            .container.one_column{
+            grid-template-columns: auto;
+             }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="center"><img src="Tesla-Motors-logo.jpg" alt="" ></div>
+    <div class="container three_column">
+        <div class="box">
+            <title>Title</title>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, perspiciatis vel voluptates, tempore consequuntur necessitatibus quaerat error ad tempora voluptatibus, vitae magni praesentium adipisci molestiae. Cum, dolorem. Ducimus, temporibus laborum.</p>
+        </div>
+        <div class="box">
+            <title>Title</title>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, perspiciatis vel voluptates, tempore consequuntur necessitatibus quaerat error ad tempora voluptatibus, vitae magni praesentium adipisci molestiae. Cum, dolorem. Ducimus, temporibus laborum.</p>
+        </div>   
+        <div class="box">
+            <title>Title</title>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, perspiciatis vel voluptates, tempore consequuntur necessitatibus quaerat error ad tempora voluptatibus, vitae magni praesentium adipisci molestiae. Cum, dolorem. Ducimus, temporibus laborum.</p>
+        </div>
+        <div class="box">
+            <title>Title</title>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, perspiciatis vel voluptates, tempore consequuntur necessitatibus quaerat error ad tempora voluptatibus, vitae magni praesentium adipisci molestiae. Cum, dolorem. Ducimus, temporibus laborum.</p>
+        </div>
+        <div class="box">
+            <title>Title</title>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, perspiciatis vel voluptates, tempore consequuntur necessitatibus quaerat error ad tempora voluptatibus, vitae magni praesentium adipisci molestiae. Cum, dolorem. Ducimus, temporibus laborum.</p>
+        </div>   
+        <div class="box">
+            <title>Title</title>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, perspiciatis vel voluptates, tempore consequuntur necessitatibus quaerat error ad tempora voluptatibus, vitae magni praesentium adipisci molestiae. Cum, dolorem. Ducimus, temporibus laborum.</p>
+        </div>
+    </div>
+    <div class="container one_column">
+        <div></div>
+        <div class="box">
+            <title>Title</title>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium officia sapiente aliquid sint suscipit eaque totam, facere porro corporis deleniti quod ex vel nihil aut hic ipsum cumque nesciunt ea?</p>
+        </div>
+        <div></div>
+    </div>
+
+    
+</body>
+</html>

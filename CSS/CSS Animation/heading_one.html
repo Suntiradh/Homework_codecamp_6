@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle_1{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            position: relative;
+            animation-name:move;
+                animation-duration: 10s;
+            animation-delay: 5s;
+            animation-iteration-count: 5;
+            animation-direction: normal;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        .circle_2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(169, 150, 187);
+            position: relative;
+            animation-name:move;
+                animation-duration: 10s;
+            animation-delay: 5s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        .circle_3{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(82, 3, 36);
+            position: relative;
+            animation: move;
+                animation-duration: 10s;
+            animation-delay: 5s;
+            animation-iteration-count: 5;
+            animation-direction: reverse;
+            border-style: solid;
+            border-radius: 50%;
+        }
+
+        @keyframes move{
+            0% {
+                left: 0px;
+            }
+            25% {
+                left: 300px;
+            }
+            50% {
+                left: 500px;
+            }
+            75% {
+                left: 800px;
+            }
+            100% {
+                left: 1300px;
+            }
+        }
+
+    </style>
+</head>
+<body style="text-align: center;">
+    <div class="circle_1"><h1> normal</h1></div>
+    <br>
+    <div class="circle_2"><h1> alternate</h1></div>
+    <br>
+    <div class="circle_3"><h1>reverse</h1></div>
+</body>
+</html>

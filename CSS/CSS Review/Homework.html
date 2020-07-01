@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border-style: solid;border-width: 1px;border-spacing: 0px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+            <tr>
+                <th>CSS Syntax</th>
+                <th>CSS Writing</th>
+                <th>Selector</th>
+                <th>Combinatior</th>
+            </tr>
+            <tr>
+                <td>1.1Selector 
+                    <br>
+                    <dl>
+                        <dt>1.2Declaration</dt>
+                        <dd>1.2.1Property </dd>
+                        <dd>1.2.2Value</dd>
+                    </dl>   
+                </td>
+                <td>
+                    1.Inline CSS
+                    <br>
+                    <br>
+                    2.External CSS
+                    <br>
+                    <br>
+                    3.Internal CSS
+                </td>
+                <td>
+                    1.ID
+                    <br>
+                    2.Class
+                    <br>
+                    3.Pseudo Element
+                    <br>
+                    4.Pseudo Class
+                    <br>
+                    5.Combinators
+                    <br>
+                    6.Attribute selector
+                </td>
+                <td>
+                    1.element element
+                    <br>
+                    2.element>element
+                    <br>
+                    3.element+element
+                    <br>
+                    4.element1~element2
+                </td>
+            </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p><h2>For Example CSS Syntax</h2></p>
+    <pre>
+        p {
+            color: red;
+            text-align: center;
+          }
+    </pre>
+    <br>
+    <p><h2>For Example CSS Writing</h2></p>
+    <pre>
+        <span><</span> h1 style="color:blue;text-align:center;">This is a heading</h1>
+        <span><</span>p style="color:red;">This is a paragraph.</p>
+    </pre>
+        <br>
+    <p><h2>Selector Example Case</h2></p>
+    <pre>
+        p.center {
+            text-align: center;
+            color: red;
+          }
+
+        #para1 {
+            text-align: center;
+            color: red;
+          }
+
+        p {
+            text-align: center;
+            color: red;
+          }
+    </pre>
+    <br>
+    <p><h2>Combinator Example Case</h2></p>
+    <pre>
+        div p {
+            background-color: yellow;
+          }
+        
+        div > p {
+            background-color: yellow;
+          }
+
+        div + p {
+            background-color: yellow;
+          } 
+        
+        div ~ p {
+            background-color: yellow;
+          }
+    </pre>
+    <hr>
+
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Differentiation</th>
+        </tr>
+        <tr>
+            <td>The property is piece of this declaration. 
+            <br>
+            It dictates which aspect of the selector will be changed visually</td>
+            <td>The value is what the chosen CSS property will be changed to</td>
+            <td>A property is a statement executing a declaration, but Value is used for declaring the value of that declaration.</td>
+        </tr>
+    </table>
+        <br>
+        <table>
+            <tr>
+                <th>
+                    <td>Property</td>
+                    <td>Property for content</td>
+                    <td>Property for border</td>
+                    <td>Property for padding</td>
+                    <td>Property for margin</td>
+                    <td>Property for element</td>
+                </th>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th rowspan="2">Value unit</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+            <td>
+                %<br>
+                cm <br>
+                em <br>
+                ex <br>
+                in <br>
+                mm <br>
+                pc <br>
+                pt <br>
+                px <br>
+            </td>
+            <td>
+                Defines a measurement as a percentage relative to another value, typically an enclosing element.
+                <br>
+                Defines a measurement in centimeters.
+                <br>
+                A relative measurement for the height of a font in em spaces. Because an em unit is equivalent to the size of a given font, if you assign a font to 12pt, each "em" unit would be 12pt; thus, 2em would be 24pt.
+                <br>
+                This value defines a measurement relative to a font's x-height. The x-height is determined by the height of the font's lowercase letter x.
+                <br>
+                Defines a measurement in inches.
+                <br>
+                Defines a measurement in millimeters.
+                <br>
+                Defines a measurement in picas. A pica is equivalent to 12 points; thus, there are 6 picas per inch.
+                <br>
+                Defines a measurement in points. A point is defined as 1/72nd of an inch.
+                <br>
+                Defines a measurement in screen pixels.
+            </td>            
+        </table>
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <th rowspan="2">Value Display Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+            <td>
+                inline
+                <br>
+                block
+                <br>
+                contents
+                <br>
+                flex
+                <br>
+                grid
+                <br>
+                inline-block
+                <br>
+                inline-flex
+                <br>
+                inline-grid
+                <br>
+                inline-table
+                <br>
+                list-item
+                <br>
+                run-in
+                <br>
+                table
+                <br>
+                table-caption
+                <br>
+                table-column-group
+                <br>
+                table-header-group
+                <br>
+                table-footer-group
+                <br>
+                table-row-group
+                <br>
+                table-cell
+                <br>
+                table-column
+                <br>
+                table-row
+                <br>
+                none
+                <br>
+                initial
+                <br>
+                inherit
+            </td>
+            <td>
+                Displays an element as an inline element (like <span><</span>span>). Any height and width properties will have no effect.
+                <br>
+                Displays an element as a block element (like <span><</span>p>). It starts on a new line, and takes up the whole width
+                <br>
+                Makes the container disappear, making the child elements children of the element the next level up in the DOM
+                <br>
+                Displays an element as a block-level flex container 
+                <br>
+                Displays an element as a block-level grid container
+                <br>
+                Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values 
+                <br>
+                Displays an element as an inline-level flex container 
+                <br>
+                Displays an element as an inline-level grid container
+                <br>
+                The element is displayed as an inline-level table
+                <br>
+                Let the element behave like a <span><</span>li> element
+                <br>
+                Displays an element as either block or inline, depending on context 
+                <br>
+                Let the element behave like a <span><</span>table> element 
+                <br>
+                Let the element behave like a <span><</span>caption> element 
+                <br>
+                Let the element behave like a <span><</span>colgroup> element   
+                <br>
+                Let the element behave like a <span><</span>thead> element
+                <br>
+                Let the element behave like a <span><</span>tfoot> element 
+                <br>
+                Let the element behave like a <span><</span>tbody> element
+                <br>
+                Let the element behave like a <span><</span>td> element
+                <br>
+                Let the element behave like a <span><</span>col> element
+                <br>
+                Let the element behave like a <span><</span>tr> element
+                <br>
+                The element is completely removed
+                <br>
+                Sets this property to its default value. Read about initial
+                <br>
+                Inherits this property from its parent element. Read about inherit      
+            </td>
+        </table>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>Grid Flex Differentiation</th>
+            </tr>
+            <td>
+                The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time. The two specifications share some common features, however, and if you have already learned how to use flexbox, the similarities should help you get to grips with Grid
+            </td>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th>Justify</th>
+                <th>Align</th>
+            </tr>
+            <td>The justify-content property aligns the flexed container’s contents on the main axis, which by default(in case of the web) is the horizontal axis.</td>
+            <td>The align-content property aligns a flex container’s lines within the flex container when there is extra space on the cross axis.</td>
+        </table>
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <th>Position</th>
+                <th>z-index</th>
+            </tr>
+            <td>The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).</td>
+            <td>The z-index property specifies the stack order of an element.
+
+                An element with greater stack order is always in front of an element with a lower stack order.
+                
+                Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky).</td>
+        </table>
+</body>
+</html>

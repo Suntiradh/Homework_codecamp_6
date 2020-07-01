@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .float-left{
+            float: left;
+            width: 12%;
+        }
+        .float-margin {
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div class="float-left">
+            <label for="Flyingfrom">Flying from</label> 
+            <br>
+            <select name="" id="Flyingfrom">
+                <option value="Karachi,Pakist">Karachi,Pakist</option>
+            </select> 
+        </div>
+        <div>
+            <label for="To">To</label> 
+            <br>
+            <select name="" id="To">
+                <option value="Islamabad,Pal">Islamabad,Pal</option>
+            </select> 
+        </div>
+        <div class="float-left">
+            <label for="Departing">Departing</label> 
+            <br>
+            <input type="date" name="" id="Departing">
+        </div>
+        <div>
+            <label for="Returning">Returning</label> 
+            <br>
+            <input type="date" name="" id="Returning">
+        </div>
+        <div class="float-margin">
+            <label for="Adult">Adult</label> 
+            <br>
+            <input type="number" max="99" min="1" name="Adult" value="1">
+        </div>
+        <div class="float-margin">
+            <label for="Child">Child</label> 
+            <br>
+            <input type="number" max="99" min="1" name="Child" value="0">
+        </div>
+        <div class="float-margin">
+            <label for="Infant">Infant</label> 
+            <br>
+            <input type="number" max="99" min="1" name="Infant" value="0">
+        </div>
+        <div>
+            <label style="color: red;" for="Currency">Currency</label> 
+            <br>
+            <select name="" id="Currency">
+                <option value="THB">THB</option>
+            </select>
+        </div>
+        <br>
+        <input style="background-color:orangered;color: white;" type="submit" value="SEARCH">
+    </form>
+</body>
+</html>

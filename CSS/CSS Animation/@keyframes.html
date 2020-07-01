@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            position: relative;
+            animation: move 15s infinite;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        .square{
+            width: 200px;
+            height: 200px;
+            background-color: darkorchid;
+            position: relative;
+            animation: play 15s infinite;
+            border-style: ridge;
+            border-width: 5px;
+        }
+
+        @keyframes move{
+            0% {left:0px;background-color: darkorange;visibility: visible;}
+            25% {left:650px;background-color: darkgoldenrod; visibility: hidden;}
+            50% {left:1300px;background-color: burlywood;visibility: hidden;}
+            75% {left:650px;background-color: darkgreen;visibility: visible;}
+            100% {left:0px;background-color: darkblue;visibility: collapse;}
+        }
+        @keyframes play{
+            from {
+                right: 0px;background-color: darkseagreen;
+            }
+            to {
+                left: 1000px;background-color: deeppink;width: 500px;height: 500px;
+            }
+        }
+
+    </style>
+</head>
+<body style="background-color: floralwhite;">
+    <div class="circle"></div>
+    <br>
+    <br>
+    <div class="square"></div>
+</body>
+</html>
