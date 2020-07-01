@@ -19,5 +19,3 @@ false - true + false - true + false;    // -2
 3 - 4               // -1
 "Bob" - "bill"      // NaN
 "Code" + "Camp" + true + false + null + undefined   // "CodeCamptruefalsenullundefined"
-
-\\
