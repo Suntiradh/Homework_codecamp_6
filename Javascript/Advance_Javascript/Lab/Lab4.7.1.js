@@ -6,4 +6,5 @@ while (key !== "stop") {
     obj[key] = value;
     key = prompt("Enter key: ")
 }
+
 console.log(obj);
