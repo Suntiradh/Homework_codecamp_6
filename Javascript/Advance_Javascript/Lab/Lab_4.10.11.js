@@ -4,6 +4,6 @@ let array1 = [
     { name: "watermelon", birth: "1985-12-01" },
 ]
     ;
-let array2 = array1.map((x, k) => ({ ...x, age: (new Date().getFullYear()) - (new Date(array1[k].birth).getFullYear()) }))
+let array2 = array1.map( (x, k) => ( { ...x, age: ( new Date().getFullYear() ) - ( new Date(array1[k].birth).getFullYear() ) } ) )
 
 console.log(array2);
